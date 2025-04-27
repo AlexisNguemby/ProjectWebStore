@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /E-COMMERCE/
+
+# Ne pas réécrire les fichiers PHP existants
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Réécrire toutes les requêtes vers index.php
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
