@@ -32,3 +32,4 @@ if (empty($url[0]) || $url[0] == 'accueil') {
     // Si aucune correspondance afficher une erreur 404
     require_once 'app/routeur/erreur404.html';   
 }
+ 
