@@ -14,8 +14,8 @@ $method = $_SERVER['REQUEST_METHOD'];
 // Contrôler la première valeur de l'URL
 if (empty($url[0]) || $url[0] == 'accueil') {
     // Si l'URL est vide ou correspond à "accueil", afficher la page d'accueil
-    require_once 'app/vue/accueil/accueil.php';
-} else if ($url[0] == 'produits') {
+    require_once 'app/views/home/accueil.php';
+} else if ($url[0] == 'products') {
     // Si l'URL correspond à "produits" gérer les produits
    echo 'w.e je sais pas quoi mettre ici';  
 } else if ($url[0] == 'categorie') {
@@ -30,6 +30,6 @@ if (empty($url[0]) || $url[0] == 'accueil') {
     }
 } else {
     // Si aucune correspondance afficher une erreur 404
-    require_once 'app/routeur/erreur404.html';   
+    require_once 'app/router/erreur404.html';   
 }
  
